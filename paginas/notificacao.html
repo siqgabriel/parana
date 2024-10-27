@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranã - Notificação</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="../midia/favicon.png">
+    <script src="../js/script.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "b3c4787d-67e5-42f0-a7f4-29180f27f3eb", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "bec88065-4e6f-478f-836a-9c8d40f69415", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <nav class="menu">
+                <a href="../index.html">
+                    <div class="logo">
+                        <br>
+                    </div>
+                </a>
+                <div class="nav nav-responsivo">
+                    <a href="../index.html">HOME</a>
+                    <a href="./sobre-nos.html">SOBRE NÓS</a>
+                    <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                    <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                    <a href="./cadastro.html">CADASTRO</a>
+                </div>
+                <div onclick="menuShow()" class="menu_responsivo">
+                    <button class="icone-menu">
+                        <img src="../midia/menu1.png" alt="Icone Menu" class="icone-menu1">
+                        <img src="../midia/menu2.png" alt="Icone Menu" class="icone-menu2">
+                    </button>
+                </div> 
+                <div class="menu-mobile">
+                    <div class="menu-mobile-item">
+                        <a href="../index.html">HOME</a>
+                        <a href="./qualidade.html">SOBRE NÓS</a>
+                        <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                        <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                        <a href="./cadastro.html">CADASTRO</a>
+                    </div>
+                </div>               
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="principal">
+            <video autoplay loop muted playsinline class="video-banner">
+                <source src="/midia/notificacao.mp4">
+            </video>
+            <div class="principal-esquerda">
+                <h4>Se você presenciar alguma poluição notifique!</h4>
+            </div>
+        </section>
+
+        <section class="secundaria1">
+            <h3>Descubra o melhor canal para você realizar sua notificação</h3>
+            <p>Clique em um dos links abaixo</p>
+            <a href="http://denuncia.sigam.sp.gov.br/">Site SIGAM</a>
+            <a href="https://www.policiamilitar.sp.gov.br/unidades/ambiental/localize.html">Telefones da sua Cidade</a>
+            <a href="https://itunes.apple.com/br/app/den%C3%BAncia-ambiente/id1191301086?mt=8">Aplicativo Denúncia Ambiente IOS</a>
+            <a href="https://play.google.com/store/apps/details?id=br.gov.sp.denunciaambiental">Aplicativo Denúncia Ambiente Android</a>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape1">
+            <p>Copyright © 2024 PARANÃ Todos os direitos reservados.</p>
+            <img src="../midia/logo-ideatec.png" alt="Logo Ideatec">
+          </div>
+    </footer>
+
+    
+</body>
+</html>

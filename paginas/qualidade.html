@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranã - Qualidade</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="../midia/favicon.png">
+    <script src="../js/script.js"></script>
+    <script>
+        
+        window.watsonAssistantChatOptions = {
+          integrationID: "b3c4787d-67e5-42f0-a7f4-29180f27f3eb", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "bec88065-4e6f-478f-836a-9c8d40f69415", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <nav class="menu">
+                <a href="../index.html">
+                    <div class="logo">
+                        <br>
+                    </div>
+                </a>
+                <div class="nav nav-responsivo">
+                    <a href="../index.html">HOME</a>
+                    <a href="./sobre-nos.html">SOBRE NÓS</a>
+                    <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                    <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                    <a href="./cadastro.html">CADASTRO</a>
+                </div>
+                <div onclick="menuShow()" class="menu_responsivo">
+                    <button class="icone-menu">
+                        <img src="../midia/menu1.png" alt="Icone Menu" class="icone-menu1">
+                        <img src="../midia/menu2.png" alt="Icone Menu" class="icone-menu2">
+                    </button>
+                </div> 
+                <div class="menu-mobile">
+                    <div class="menu-mobile-item">
+                        <a href="../index.html">HOME</a>
+                        <a href="./qualidade.html">SOBRE NÓS</a>
+                        <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                        <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                        <a href="./cadastro.html">CADASTRO</a>
+                    </div>
+                </div>               
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="principal">
+            <video autoplay loop muted playsinline class="video-banner">
+                <source src="/midia/video-praia.mp4">
+            </video>
+            <div class="principal-esquerda">
+                <h1>Verifique se a água da sua praia está própria para banho!</h1>
+            </div>
+            <div class="principal-direita">
+                <div class="form-contato">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1856786.569518862!2d-48.91466826772199!3d-24.639663011170843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94daa763756b5cc3%3A0xa59eee38fa479fc0!2sMesorregi%C3%A3o%20do%20Litoral%20Sul%20Paulista%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1717777221309!5m2!1spt-BR!2sbr" class="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="secundaria1">
+            <h3>Saiba se a qualidade está própria para banho</h3>
+            <p>Clique no link abaixo para mais informações</p>
+            <a href="https://qualipraia.cetesb.sp.gov.br/qualidade-da-praia/">CETESB</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape1">
+            <p>Copyright © 2024 PARANÃ Todos os direitos reservados.</p>
+            <img src="../midia/logo-ideatec.png" alt="Logo Ideatec">
+          </div>
+    </footer>
+</body>
+</html>

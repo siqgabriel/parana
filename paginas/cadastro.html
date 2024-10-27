@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranã - Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="../midia/favicon.png">
+    <script src="../js/script.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "b3c4787d-67e5-42f0-a7f4-29180f27f3eb", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "bec88065-4e6f-478f-836a-9c8d40f69415", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <nav class="menu">
+                <a href="../index.html">
+                    <div class="logo">
+                        <br>
+                    </div>
+                </a>
+                <div class="nav nav-responsivo">
+                    <a href="../index.html">HOME</a>
+                    <a href="./sobre-nos.html">SOBRE NÓS</a>
+                    <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                    <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                    <a href="./cadastro.html">CADASTRO</a>
+                </div>
+                <div onclick="menuShow()" class="menu_responsivo">
+                    <button class="icone-menu">
+                        <img src="../midia/menu1.png" alt="Icone Menu" class="icone-menu1">
+                        <img src="../midia/menu2.png" alt="Icone Menu" class="icone-menu2">
+                    </button>
+                </div> 
+                <div class="menu-mobile">
+                    <div class="menu-mobile-item">
+                        <a href="../index.html">HOME</a>
+                        <a href="./qualidade.html">SOBRE NÓS</a>
+                        <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                        <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                        <a href="./cadastro.html">CADASTRO</a>
+                    </div>
+                </div>               
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="principal">
+            <video autoplay loop muted playsinline class="video-banner">
+                <source src="/midia/video-oceano3.mp4">
+            </video>
+            <div class="principal-esquerda">
+                <h1>Mergulhe na nossa Plataforma</h1>
+                <p>Nosso futuro não é descartável!</p>
+            </div>
+            <div class="principal-direita">
+                <div class="form-contato">
+                    <h2>Faça o seu Login</h2>
+                    <form id="loginForm" action="#" method="get" onsubmit="return validaLogin(event)"> 
+                        <fieldset>   
+                            <div class="campo">     
+                                <label for="idEmail">E-mail</label>     
+                                <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu e-mail" required minlength="7" oninvalid="this.setCustomValidity('Caractéres insuficientes.');">
+                            </div>
+                            <div class="campo">
+                                <label for="idSenha">Senha</label>
+                                <input type="password" name="txtSenha" id="idSenha" placeholder="Digite sua senha" required pattern="[A-Za-z0-9]{0-20}" oninvalid="this.setCustomValidity('Senha fora do padrão.')">
+                            </div>
+                            <div class="lembrar">
+                                <input type="checkbox" name="txtLembrar" id="idLembrar" value="lembrete" checked>
+                                <label for="idLembrar">Lembrar-me</label>
+                            </div>
+                            <div>
+                                <button type="submit">ENTRAR</button>
+                            </div>
+                        </fieldset>
+                  </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-cadastro">
+            <div class="sec-cadastro1">
+                <h3>Faça parte da Plataforma Paranã!!</h3>
+                <p>Sustentabilidade começa com você. Faça escolhas conscientespara preservar o meio ambiente</p>
+                <div class="info-cadastro">
+                    <br>
+                </div>
+            </div>
+            <form id="formCadastro" onsubmit="cadastrarUsuario(event)">
+                <fieldset class="form-contato">
+                    <div class="campo"> 
+                        <label for="idNome">Nome:</label><br>
+                        <input type="text" id="idNome" name="nome" placeholder="Digite seu Nome" required><br><br>
+                    </div>
+                    <div class="campo"> 
+                        <label for="idEmailCadastro">Email:</label><br>
+                        <input type="email" id="idEmailCadastro" name="email" placeholder="Digite seu E-mail" required><br><br>
+                    </div>
+                    <div class="campo"> 
+                        <label for="idSenhaCadastro">Senha:</label><br>
+                        <input type="password" id="idSenhaCadastro" name="senha" placeholder="Digite sua Senha" required><br><br>
+                    </div>
+                    <div class="campo"> 
+                        <label for="idConfirmaSenha">Confirme a Senha:</label><br>
+                        <input type="password" id="idConfirmaSenha" name="confirmaSenha" placeholder="Confirme sua Senha" required><br><br>
+                    </div>
+                    <div class="cadastrar-btn"> 
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="saiba-mais">
+            <div class="secundaria1">
+                <h4>Termo de Bonificações para a Plataforma de Sustentabilidade e Proteção das Praias e Mares Paranã</h4>
+                <p>Usuários recebem 40 pontos ao entregar lixo nos pontos de coleta e 80 pontos ao participar de mutirões de limpeza, que podem ser trocados por comidas, bebidas, mochilas, cangas, canecas, camisetas e outros produtos nos estabelecimentos parceiros da Paranã. Colaboradores Paranã, como quiosques e comércios locais, além dos pontos, recebem bonificações como camisetas, copos, cadeiras, mesas e guarda-sóis. Eles também avaliam os usuários com até 5 estrelas, influenciando o rating dos usuários na plataforma, que podem ganhar medalhas pelas suas conquistas.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="popUp" class="pop-up">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <p id="popUpMessage" class="valida"></p>
+        </div>
+      </div>
+
+    <footer>
+        <div class="rodape1">
+            <p>Copyright © 2024 PARANÃ Todos os direitos reservados.</p>
+            <img src="../midia/logo-ideatec.png" alt="Logo Ideatec">
+          </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranã - Sobre Nós</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="./midia/favicon.png">
+    <script src="../js/script.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "b3c4787d-67e5-42f0-a7f4-29180f27f3eb", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "bec88065-4e6f-478f-836a-9c8d40f69415", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <nav class="menu">
+                <a href="../index.html">
+                    <div class="logo">
+                        <br>
+                    </div>
+                </a>
+                <div class="nav nav-responsivo">
+                    <a href="../index.html">HOME</a>
+                    <a href="./sobre-nos.html">SOBRE NÓS</a>
+                    <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                    <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                    <a href="./cadastro.html">CADASTRO</a>
+                </div>
+                <div onclick="menuShow()" class="menu_responsivo">
+                    <button class="icone-menu">
+                        <img src="../midia/menu1.png" alt="Icone Menu" class="icone-menu1">
+                        <img src="../midia/menu2.png" alt="Icone Menu" class="icone-menu2">
+                    </button>
+                </div> 
+                <div class="menu-mobile">
+                    <div class="menu-mobile-item">
+                        <a href="../index.html">HOME</a>
+                        <a href="./sobre-nos.html">SOBRE NÓS</a>
+                        <a href="./qualidade.html">QUALIDADE DA ÁGUA</a>
+                        <a href="./notificacao.html">NOTIFICAÇÃO</a>
+                        <a href="./cadastro.html">CADASTRO</a>
+                    </div>
+                </div>               
+            </nav>
+        </div>
+    </header>
+    
+    <main class="principal-int">
+        <section class="principal1">
+            <video autoplay loop muted playsinline class="video-banner1">
+                <source src="/midia/video-oceano2.mp4">
+            </video>
+            <div class="div-int">
+                <h2>Integrantes - IDEATEC</h2>
+                <div class="container-int">
+                    <div class="box-int box-int3">
+                            <img src="../midia/gabriel.png" alt="foto do integrante Gabriel">
+                            <ul>
+                                <li>
+                                    <p><strong>NOME: </strong>Gabriel de Siqueira Agostinho</p>
+                                </li>
+                                <li>
+                                    <p><strong>RM: </strong>555888</p>
+                                </li>
+                                <li>
+                                    <p><strong>TURMA: </strong>1TDSPV</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>LINK: </strong><a href="https://github.com/siqgabriel" target="_blank">https://github.com/siqgabriel</a>
+                                    </p>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="box-int box-int2">
+                            <img src="../midia/hadassa.png" alt="foto da integrante Hadassa">
+                            <ul>
+                                <li>
+                                    <p><strong>NOME: </strong>Hadassa Ribeiro da Costa</p>
+                                </li>
+                                <li>
+                                    <p><strong>RM: </strong>556359</p>
+                                </li>
+                                <li>
+                                    <p><strong>TURMA: </strong>1TDSPV</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>LINK: </strong><a href="https://github.com/Costahadassa" target="_blank">https://github.com/Costahadassa</a>
+                                    </p>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="box-int box-int1">
+                            <img src="../midia/pedro.png" alt="foto do integrante Pedro">
+                            <ul>
+                                <li>
+                                    <p><strong>NOME: </strong>Pedro Augusto Costa Ladeira</p>
+                                </li>
+                                <li>
+                                    <p><strong>RM: </strong>558514</p>
+                                </li>
+                                <li>
+                                    <p><strong>TURMA: </strong>1TDSPV</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>LINK: </strong><a href="https://github.com/Pedro-Ladeira" target="_blank">https://github.com/Pedro-Ladeira</a>
+                                    </p>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <h3>REPOSITÓRIO</h3>
+                    <a href="https://github.com/IDEATEC-1TDSPV/Parana.git" target="_blank">https://github.com/IDEATEC-1TDSPV/Parana.git</a>
+            </div>
+        </section>
+    </main>
+  
+    <footer>
+        <div class="rodape1">
+            <p>Copyright © 2024 PARANÃ Todos os direitos reservados.</p>
+            <img src="../midia/logo-ideatec.png" alt="Logo Ideatec">
+          </div>
+    </footer>
+</body>
+</html>
